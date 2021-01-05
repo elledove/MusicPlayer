@@ -1,4 +1,6 @@
 import React from 'react';
+//importing styles from SAAS
+import "./styles/app.scss";
 import Song from './Components/Song';
 import Player from './Components/Player';
 
