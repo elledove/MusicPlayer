@@ -7,7 +7,7 @@ import Player from './Components/Player';
 function App() {
   return (
     <div className="App">
-      <h1> Welcome To Elles Music Player</h1>
+      <h1 className="welcome"> Welcome To Elles Music Player</h1>
       <Song/>
       <Player/>
 
