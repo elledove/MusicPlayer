@@ -9,7 +9,13 @@ const audioRef = useRef(null);
 
 // Event handlers
 const playSongHandler = () => { 
-    console.log(audioRef)
+    if(props.isPlaying){
+        audioRef.current.pause();
+        props.setIsPlaying(!props.isPlaying)
+    }else{
+        audioRef.current.play();
+        props.setIsPlaying(!props.isPlaying)
+    }
 };
 
     return (

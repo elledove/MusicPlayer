@@ -6,15 +6,18 @@ import Player from './Components/Player';
 import data from './util';
 
 function App() {
-  //This will return to me all the songs from the util file.
+  //State1-This will return to me all the songs from the util file.
   const [songs,setSongs]=useState(data());
-  //Have a current song ready to play when user opens app.
+  //State2-Have a current song ready to play when user opens app.
   const [currentSong,setCurrentSong] = useState(songs[0]);
+  //State3- This will return true/false if the song is currently playing.
+  const[isPlaying,setIsPlaying]=useState(false);
+
   return (
     <div className="App">
       <h1 className="welcome"> Welcome To Elles Music Player</h1>
       <Song currentSong={currentSong}/>
-      <Player currentSong={currentSong}/>
+      <Player isPlaying={isPlaying} setIsPlaying={setIsPlaying} currentSong={currentSong}/>
 
     </div>
   );
