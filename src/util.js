@@ -8,7 +8,7 @@ function chillTrax(){
     artist: "j'san, Epektase",
     audio: "https://mp3.chillhop.com/serve.php/?mp3=7916",
 color:["#42B8C5", "#302170"],
-active:false,
+active:true,
 id:uuid4(),
 },
 {
