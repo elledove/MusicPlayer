@@ -19,7 +19,11 @@ const playSongHandler = () => {
     }
 };
 
-const timeUpdateHander = () =>{
+const timeUpdateHander = (event) =>{
+    const current = event.target.currentTime;
+    //This will return duration in seconds
+    const duration = event.target.duration;
+    setSongInfo({...songInfo,currentTime:current, songDuration: duration})
 
 
 }
@@ -46,7 +50,7 @@ const [songInfo,setSongInfo] = useState({
         </div>
 
 
-        <audio onTimeUpdate ref={audioRef} src={props.currentSong.audio}></audio>
+        <audio  onTimeUpdate={timeUpdateHander} ref={audioRef} src={props.currentSong.audio}></audio>
 
 
     </div>  );
