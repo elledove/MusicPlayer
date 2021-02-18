@@ -1,4 +1,5 @@
-import React,{useRef} from 'react';
+import React,{useRef,useState} from 'react';
+//import React,{useState} from 'react';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faPlay,faAngleLeft,faAngleRight} from '@fortawesome/free-solid-svg-icons';
 //With fort awesome we can import icons and pass them down as a value to icon which is a prop
@@ -18,6 +19,16 @@ const playSongHandler = () => {
     }
 };
 
+const timeUpdateHander = () =>{
+
+
+}
+//State
+const [songInfo,setSongInfo] = useState({
+    currentTime : null,
+    songDuration:null
+})
+
     return (
     <div className="player">
         <div className="time-control">
@@ -35,7 +46,7 @@ const playSongHandler = () => {
         </div>
 
 
-        <audio ref={audioRef} src={props.currentSong.audio}></audio>
+        <audio onTimeUpdate ref={audioRef} src={props.currentSong.audio}></audio>
 
 
     </div>  );
