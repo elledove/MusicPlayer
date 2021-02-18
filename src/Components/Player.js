@@ -59,7 +59,7 @@ const [songInfo,setSongInfo] = useState({
         </div>
 
 
-        <audio  onTimeUpdate={timeUpdateHander} ref={audioRef} src={props.currentSong.audio}></audio>
+        <audio onLoadedMetadata={timeUpdateHander}  onTimeUpdate={timeUpdateHander} ref={audioRef} src={props.currentSong.audio}></audio>
 
 
     </div>  );
