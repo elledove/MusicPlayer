@@ -46,7 +46,7 @@ const [songInfo,setSongInfo] = useState({
     <div className="player">
         <div className="time-control">
             <p>{getTime(songInfo.currentTime)}</p>
-            <input type="range"/>
+            <input min={0} max={songInfo.songDuration} type="range"/>
             <p>{getTime(songInfo.songDuration)}</p>
 
         </div>
