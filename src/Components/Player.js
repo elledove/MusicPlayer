@@ -9,6 +9,16 @@ const Player = (props) => {
 const audioRef = useRef(null);
 
 // Event handlers
+
+
+
+// const dragHandler = () => {
+
+
+// }
+
+
+
 const playSongHandler = () => { 
     if(props.isPlaying){
         audioRef.current.pause();
@@ -38,8 +48,8 @@ return(
 
 //State
 const [songInfo,setSongInfo] = useState({
-    currentTime : null,
-    songDuration:null
+    currentTime : 0,
+    songDuration:0,
 })
 
     return (
