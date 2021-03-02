@@ -64,7 +64,7 @@ const [songInfo,setSongInfo] = useState({
         </div>
         <div className="play-control">
             <FontAwesomeIcon className="skip-back"  size ="2x" icon={faAngleLeft}/> 
-            <FontAwesomeIcon onClick={playSongHandler} className="play" size ="2x" icon={faPlay}/> 
+            <FontAwesomeIcon onClick={playSongHandler} className="play" size ="2x" icon={ props.isPlaying ? faPause:faPlay}/> 
             <FontAwesomeIcon className="skip-forward" size ="2x" icon={faAngleRight}/> 
 
 
