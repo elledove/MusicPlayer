@@ -1,12 +1,17 @@
 .library{
     overflow: scroll;
-    background-color:rgb(88,95,95);
+    background-color:white;
     width:20rem;
     top:0;
     left:0;
     position: fixed;
     height:100%;
     box-shadow: 2px 2px 50px rgb(104, 99, 99);
+
+
+    h2{
+      padding:4rem;
+    }
 }
 
 .library-song{
@@ -16,7 +21,7 @@
     padding: 1rem 2rem 1rem 2rem;
 
     img{
-        width:20%;
+        width:40%;
     }
 
 
