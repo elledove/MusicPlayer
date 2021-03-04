@@ -8,3 +8,16 @@
     height:100%;
     box-shadow: 2px 2px 50px rgb(104, 99, 99);
 }
+
+.library-song{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem 2rem 1rem 2rem;
+
+    img{
+        width:20%;
+    }
+
+
+}
