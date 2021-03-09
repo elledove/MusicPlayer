@@ -19,7 +19,7 @@ function App() {
       <h1 className="welcome"> Welcome To Elles Music Player</h1>
       <Song currentSong={currentSong}/>
       <Player isPlaying={isPlaying} setIsPlaying={setIsPlaying} currentSong={currentSong}/>
-      <Library songs={songs}/>
+      <Library songs={songs} setCurrentSong={setCurrentSong}/>
 
     </div>
   );
