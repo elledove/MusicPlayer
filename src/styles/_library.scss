@@ -17,11 +17,14 @@
 .library-song{
     display: flex;
     align-items: center;
-    
+    cursor:pointer;
     padding: 1rem 2rem 1rem 2rem;
 
     img{
         width:40%;
+    }
+    &:hover{
+        background-color: darkcyan;
     }
 
 
