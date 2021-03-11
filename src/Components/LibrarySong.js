@@ -5,10 +5,10 @@ const LibrarySong = (props) => {
 
 
 const songSelectHandler = () =>{
+  const selectedSong = props.songs.filter((state) => state.id === props.id) ;
 
 
 
-  
 }
 
 
