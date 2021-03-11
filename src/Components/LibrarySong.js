@@ -6,7 +6,7 @@ const LibrarySong = (props) => {
 
 const songSelectHandler = () =>{
   const selectedSong = props.songs.filter((state) => state.id === props.id) ;
-
+      props.setCurrentSong(selectedSong[0]);
 
 
 }
